@@ -11,7 +11,7 @@ const questions = [
   },
   // project status + badge?
   {
-    name: "table of contents",
+    name: "tableOfContents",
     message: "Select the sections you wish to include in your README",
     type: "checkbox",
     choices: [
@@ -32,11 +32,6 @@ const questions = [
   {
     name: "usage",
     message: "Describe how this app is used",
-    type: "input",
-  },
-  {
-    name: "features",
-    message: "What special features are in your project?",
     type: "input",
   },
   {
@@ -63,10 +58,15 @@ const questions = [
     ],
   },
   {
-    name: "github username",
+    name: "userName",
     message: "Enter your github username",
     type: "input",
   },
+  {
+    name: "repoUrl",
+    message: "Enter the github repository URL for this project",
+    type: "input",
+  }
 ];
 
 module.exports = questions;
