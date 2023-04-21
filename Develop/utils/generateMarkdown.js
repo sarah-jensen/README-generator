@@ -46,19 +46,19 @@ function renderLicenseSection(license) {
   switch (license) {
     case "The MIT License":
       return `## License
-      This project is licensed under the MIT License - see the License file for details.`;
+      This project is licensed under the MIT License - see ${getLicenseLink(license)} for details.`;
     case "Apache 2.0":
       return `## License
-      This project is licensed under the Apache License 2.0 - see the License file for details.`;
+      This project is licensed under the Apache License 2.0 - see ${getLicenseLink(license)} for details.`;
     case "Boost Software License 1.0":
       return `## License
-        This project is licensed under the Boost Software License 1.0 - see the License file for details.`;
+        This project is licensed under the Boost Software License 1.0 - see ${getLicenseLink(license)} for details.`;
     case "Eclipse Public License 1.0":
       return `## License
-        This project is licensed under the Eclipse Public License 1.0 - see the License file for details.`;
+        This project is licensed under the Eclipse Public License 1.0 - see ${getLicenseLink(license)} for details.`;
     case "Mozilla Public License 2.0":
       return `## License
-          This project is licensed under the Mozilla Public License 2.0 - see the License file for details.`;
+          This project is licensed under the Mozilla Public License 2.0 - see ${getLicenseLink(license)} for details.`;
     case "None of the above":
       return "";
     default:
@@ -67,14 +67,15 @@ function renderLicenseSection(license) {
 }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
-  ${getLicenseBadge(data.license)}
+function generateMarkdown(userData) {
+  return `# ${userData.title}
+  ${getLicenseBadge(userData.license)}
   
   ## Description
-  ${data.description}
+  ${userData.description}
   
   ## Table of Contents
+  ${userData.tableOfContents}
   
   * [Installation](#installation)
   * [Usage](#usage)
@@ -84,24 +85,22 @@ function generateMarkdown(data) {
   * [Questions](#questions)
   
   ## Installation
-  ${data.installation}
+  ${userData.installation}
   
   ## Usage
-  ${data.usage}
+  ${userData.usage}
   
   ## Contributing
-  ${data.contributing}
+  ${userData.contributing}
   
   ## Tests
-  ${data.tests}
+  ${userData.tests}
   
   ## License
-  ${getLicenseLink(data.license)}
+  ${renderLicenseSection(userData.license)}
   
   ## Questions
-  If you have any questions or issues with the repo, please reach out to ${
-    data.email
-  } or create an issue in the [repo](${data.repoUrl}).
+  If you have any questions or issues with the repo, please reach out to ${userData.userName} or create an issue in the [repo](${userData.repoUrl}).
 `;
 }
 
