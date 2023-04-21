@@ -17,7 +17,6 @@ const questions = [
     choices: [
       "Installation",
       "Usage",
-      "Features",
       "Contributing",
       "Tests",
       "License",
