@@ -9,7 +9,6 @@ const questions = [
     message: "Why did you build this project?",
     type: "input",
   },
-  // project status + badge?
   {
     name: "installation",
     message: "Describe how a user should install this app.",
