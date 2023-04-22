@@ -30,7 +30,6 @@
   5. Type `npm i inquirer@8.2.4` to install the `inquirer` package. 
   6. Run the application by typing `node index` in the command line.
 
-
   ## Usage
   After following Installation instructions and running the application, the README file will be automatically added to the `Develop` directory. You may copy and paste the file to the repo for your project. Be aware that each time the application is run, the previously generated `README.md` will be overwritten.
   
@@ -39,8 +38,8 @@
 
   ## Credits
   * Starter code cloned from [coding-bootcamp-repository](https://github.com/coding-boot-camp/potential-enigma).
-  *License badges created by [shields.io](https://shields.io/) and collected by [lukas-h](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba).
-  *Support and debugging provided by my classmate, [Olena P](https://github.com/UserOlena).
-  
+  * License badges created by [shields.io](https://shields.io/) and collected by [lukas-h](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba).
+  * Support and debugging provided by my classmate, [Olena P](https://github.com/UserOlena).
+
   ## Questions
   If you have any questions or issues with the repo, please reach out to "[sarah-jensen]("https://github.com/sarah-jensen")" or create an issue in the "["repo"](https://github.com/sarah-jensen/README-generator)".
