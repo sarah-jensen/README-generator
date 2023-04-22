@@ -33,7 +33,7 @@ const questions = [
   {
     name: "license",
     message: "Which license(s) is this project covered under?",
-    type: "checkbox",
+    type: "list",
     choices: [
       "The MIT License",
       "Apache 2.0 License",
