@@ -1,3 +1,4 @@
+// Prompts to collect userData
 const questions = [
   {
     name: "title",
