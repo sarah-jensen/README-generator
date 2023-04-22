@@ -11,19 +11,6 @@ const questions = [
   },
   // project status + badge?
   {
-    name: "tableOfContents",
-    message: "Select the sections you wish to include in your README",
-    type: "checkbox",
-    choices: [
-      "Installation",
-      "Usage",
-      "Contributing",
-      "Tests",
-      "License",
-      "Questions",
-    ],
-  },
-  {
     name: "installation",
     message: "Describe how a user should install this app.",
     type: "input",
@@ -57,7 +44,7 @@ const questions = [
     ],
   },
   {
-    name: "userName",
+    name: "githubUserName",
     message: "Enter your github username",
     type: "input",
   },
