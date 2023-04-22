@@ -38,9 +38,9 @@
   This project is open source and available under the [MIT License](./LICENSE)
 
   ## Credits
-  Starter code cloned from [coding-bootcamp-repository](https://github.com/coding-boot-camp/potential-enigma).
-  License badges created by [shields.io](https://shields.io/) and collected by [lukas-h](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba).
-  Support and debugging provided by my classmate, [Olena P](https://github.com/UserOlena).
+  * Starter code cloned from [coding-bootcamp-repository](https://github.com/coding-boot-camp/potential-enigma).
+  *License badges created by [shields.io](https://shields.io/) and collected by [lukas-h](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba).
+  *Support and debugging provided by my classmate, [Olena P](https://github.com/UserOlena).
   
   ## Questions
   If you have any questions or issues with the repo, please reach out to "[sarah-jensen]("https://github.com/sarah-jensen")" or create an issue in the "["repo"](https://github.com/sarah-jensen/README-generator)".
