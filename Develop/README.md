@@ -35,7 +35,7 @@
   After following Installation instructions and running the application, the README file will be automatically added to the `Develop` directory. You may copy and paste the file to the repo for your project. Be aware that each time the application is run, the previously generated `README.md` will be overwritten.
   
   ## License
-  This project is open source and available under the [MIT License](./LICENSE)
+  This project is open source and available under the [MIT](./LICENSE)
 
   ## Credits
   * Starter code cloned from [coding-bootcamp-repository](https://github.com/coding-boot-camp/potential-enigma).
