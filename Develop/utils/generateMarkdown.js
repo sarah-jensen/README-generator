@@ -24,7 +24,8 @@ function getLicenseBadge({license}) {
 // Function that returns the license link
 // If there is no license, return an empty string
 function getLicenseLink({license}) {
-  let licenseLink = '';
+  
+  let licenseLink;
   if (license === "The MIT License") {
     licenseLink = "(https://opensource.org/licenses/MIT)";
   } else if (license === "Apache 2.0 License") {
@@ -42,24 +43,24 @@ function getLicenseLink({license}) {
   }
 
   return licenseLink;
+  
 }
 
 // Function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection({license}) {
-  console.log(`${license} renderLicenseSection`)
   let licenseSection ;
 
   if (license === "The MIT License") {
-    licenseSection = `This project is licensed under the MIT License - see ${getLicenseLink(license)} for details.`;
+    licenseSection = `This project is licensed under the MIT License - see Badge link for details.`;
     } else if (license === "Apache 2.0 License") {
-      licenseSection = `This project is licensed under the Apache License 2.0 - see ${getLicenseLink(license)} for details.`;
+      licenseSection = `This project is licensed under the Apache License 2.0 - see Badge link for details.`;
     } else if (license === "Boost Software License 1.0") {
-      licenseSection = `This project is licensed under the Boost Software License 1.0 - see ${getLicenseLink(license)} for details.`;
+      licenseSection = `This project is licensed under the Boost Software License 1.0 - see Badge link for details.`;
     } else if (license === "Eclipse Public License 1.0") {
-        licenseSection = `This project is licensed under the Eclipse Public License 1.0 - see ${getLicenseLink(license)} for details.`;
+        licenseSection = `This project is licensed under the Eclipse Public License 1.0 - see Badge link for details.`;
     } else if (license === "Mozilla Public License 2.0") {
-        licenseSection = `This project is licensed under the Mozilla Public License 2.0 - see ${getLicenseLink(license)} for details.`;
+        licenseSection = `This project is licensed under the Mozilla Public License 2.0 - see Badge link for details.`;
       } else if (license === "None of the above") {
           licenseSection = "";
       } else {
