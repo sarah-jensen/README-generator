@@ -1,4 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// Function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function getLicenseBadge({license}) {
   let licenseBadge = '';
@@ -17,9 +17,11 @@ function getLicenseBadge({license}) {
   } else {
     licenseBadge = "";
   }
+
+  return licenseBadge;
 }
 
-// TODO: Create a function that returns the license link
+// Function that returns the license link
 // If there is no license, return an empty string
 function getLicenseLink({license}) {
   let licenseLink = '';
@@ -36,39 +38,39 @@ function getLicenseLink({license}) {
   } else if (license === "None of the above") {
     licenseLink = "";
   } else {
-    licenseBadge = "";
+    licenseLink = "";
   }
+
+  return licenseLink;
 }
 
-// TODO: Create a function that returns the license section of README
+// Function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection({license}) {
-  let licenseSection = '';
+  console.log(`${license} renderLicenseSection`)
+  let licenseSection ;
 
   if (license === "The MIT License") {
-    licenseSection = `## License
-      This project is licensed under the MIT License - see ${getLicenseLink({license})} for details.`;
+    licenseSection = `This project is licensed under the MIT License - see ${getLicenseLink(license)} for details.`;
     } else if (license === "Apache 2.0 License") {
-      licenseSection = `## License
-      This project is licensed under the Apache License 2.0 - see ${getLicenseLink({license})} for details.`;
+      licenseSection = `This project is licensed under the Apache License 2.0 - see ${getLicenseLink(license)} for details.`;
     } else if (license === "Boost Software License 1.0") {
-      licenseSection = `## License
-        This project is licensed under the Boost Software License 1.0 - see ${getLicenseLink({license})} for details.`;
-      } else if (license === "Eclipse Public License 1.0") {
-        licenseSection = `## License
-        This project is licensed under the Eclipse Public License 1.0 - see ${getLicenseLink({license})} for details.`;
-      } else if (license === "Mozilla Public License 2.0") {
-        licenseSection = `## License
-          This project is licensed under the Mozilla Public License 2.0 - see ${getLicenseLink({license})} for details.`;
-        } else if (license === "None of the above") {
+      licenseSection = `This project is licensed under the Boost Software License 1.0 - see ${getLicenseLink(license)} for details.`;
+    } else if (license === "Eclipse Public License 1.0") {
+        licenseSection = `This project is licensed under the Eclipse Public License 1.0 - see ${getLicenseLink(license)} for details.`;
+    } else if (license === "Mozilla Public License 2.0") {
+        licenseSection = `This project is licensed under the Mozilla Public License 2.0 - see ${getLicenseLink(license)} for details.`;
+      } else if (license === "None of the above") {
           licenseSection = "";
-        } else {
-          licenseBadge = "---";
-        }
+      } else {
+          licenseSection = "---";
+      }
+
+      return licenseSection;
   }
 
 
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown for README
 function generateMarkdown(userData) {
   const licenseBadge = getLicenseBadge(userData);
   const licenseSection = renderLicenseSection(userData);
